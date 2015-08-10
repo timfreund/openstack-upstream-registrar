@@ -52,12 +52,30 @@ def notify_new_student(record, **context):
     subject = "Welcome to OpenStack Upstream Training!"
     template = """Hello %(Name)s - 
 
-Welcome to OpenStack Upstream Training!  We are looking forward to our time
-together in Tokyo.  One of our mentors will contact you soon to help you
-prepare for class.  While you wait, please read the information available
-on the wiki:
+Welcome to OpenStack Upstream Training!  We are looking forward to our
+time together in Tokyo.  The objective of the two day session is to
+improve your understanding of OpenStack's contribution process and
+help you become more effective at merging code in OpenStack. The
+training is designed to be practical, it begins *now* before and will
+continue after, with mentoring sessions until your first contribution
+is completed.
 
-https://wiki.openstack.org/wiki/OpenStack_Upstream_Training
+If you haven't done it already, get familiar with OpenStack Upstream
+Training logistics[1], course objectives, the schedule[2], and
+pre-requisites[3].
+
+[1] https://wiki.openstack.org/wiki/OpenStack_Upstream_Training
+[1] https://wiki.openstack.org/wiki/OpenStack_Upstream_Training/Info#Objectives
+[2] https://wiki.openstack.org/wiki/OpenStack_Upstream_Training/Info#Course_Outline
+[3] https://wiki.openstack.org/wiki/OpenStack_Upstream_Training/Info#Prerequisites
+
+Please start engaging with your mentor by replying to this message,
+explaining what you would like to work on and what your personal
+objectives are for this class. The mentor will help you select a low
+hanging fruit bug to fix and send you further instructions.
+
+Don't hesitate to ask if you have questions regarding the training
+program.  We are here to help you!
 
 Reply to this email if you have any questions.  Talk to you soon!
 
