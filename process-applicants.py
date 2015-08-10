@@ -42,6 +42,10 @@ We've added you to the mentoring roster, and we will contact you soon with
 additional information.  Please reply to this message if you have any
 questions or concerns.
 
+In the meantime, please review the information available on the wiki:
+
+https://wiki.openstack.org/wiki/OpenStack_Upstream_Training/Admin
+
 Thanks!
 
 Tim Freund
