@@ -1,4 +1,3 @@
-gspread
-oauth2client
-PyOpenSSL
-trello
+Django
+django-allauth
+django-bootstrap3
