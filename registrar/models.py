@@ -11,6 +11,7 @@ __all__ = [
 
 class Contributor(models.Model):
     user = models.OneToOneField(User, primary_key=True)
+    name = models.CharField(max_length=128)
     irc_nick = models.CharField(max_length=50)
 
 class Session(models.Model):
