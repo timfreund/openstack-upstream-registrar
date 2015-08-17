@@ -2,14 +2,33 @@
 {% load bootstrap3 %}
 
 {% block content %}
-<h1>Hello Upstream</h1>
-{# Display a form #}
-<form action="/url/to/submit/" method="post" class="form">
-  {% csrf_token %}
-  {% buttons %}
-    <button type="submit" class="btn btn-primary">
-      {% bootstrap_icon "star" %} Submit
-    </button>
-  {% endbuttons %}
-</form>
-{% endblock %}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Welcome, New Contributors!</h1>
+    <p>You will need to complete a few tasks before submitting your first patch,
+    and the Upstream Training program will help you through that process.  We'll
+    also teach you about the social workings of the project along the way.</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+
+
+<h1>Upcoming Sessions</h1>
+
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+
+    {% for session in sessions %}
+    <div class="col-md-4">
+      <h2>{{ session.name }}</h2>
+      <p>Starts on {{ session.start_date }}</p>
+      <p>More class information.</p>
+      <p><a class="btn btn-default" href="#" role="button">Register &raquo;</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+  {% endblock %}

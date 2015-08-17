@@ -2,6 +2,13 @@ from django.db import models
 
 from django.contrib.auth.models import User
 
+__all__ = [
+    'Contributor',
+    'Session',
+    'StaffRegistration',
+    'StudentRegistration',
+]
+
 class Contributor(models.Model):
     user = models.OneToOneField(User, primary_key=True)
     irc_nick = models.CharField(max_length=50)
