@@ -1,0 +1,15 @@
+{% extends "default.html" %}
+{% load bootstrap3 %}
+
+{% block content %}
+<h1>Hello Upstream</h1>
+{# Display a form #}
+<form action="/url/to/submit/" method="post" class="form">
+  {% csrf_token %}
+  {% buttons %}
+    <button type="submit" class="btn btn-primary">
+      {% bootstrap_icon "star" %} Submit
+    </button>
+  {% endbuttons %}
+</form>
+{% endblock %}
