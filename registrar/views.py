@@ -1,3 +1,5 @@
+import datetime
+
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
@@ -9,5 +11,5 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(TemplateView, self).get_context_data(**kwargs)
-        context['sessions'] = Session.objects.all()
+        context['sessions'] = Session.objects.filter(start_date__gte=datetime.date.today())
         return context
